@@ -1,0 +1,33 @@
+{
+  "name": "@beezync/react-native",
+  "version": "0.1.0",
+  "description": "Beezync client SDK for React Native: device registration, realtime channels and notification tracking",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist", "README.md"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "pretest": "tsc -p tsconfig.test.json",
+    "test": "node --test .test-build/test/client.test.js .test-build/test/integration.js",
+    "test:integration": "npm run pretest && node --test .test-build/test/integration.js",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "@react-native-firebase/messaging": ">=18",
+    "react": ">=17",
+    "react-native": ">=0.70"
+  },
+  "peerDependenciesMeta": {
+    "@react-native-firebase/messaging": { "optional": true },
+    "react-native": { "optional": true }
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^18.2.0",
+    "react": "^18.2.0",
+    "typescript": "^5.5.0"
+  }
+}
