@@ -168,3 +168,7 @@ BEEZYNC_BASE_URL=http://127.0.0.1:8099 BEEZYNC_APP_ID=... BEEZYNC_PUBLIC_KEY=pk_
 Registra un dispositivo con un usuario único, se conecta, publica por `/v1/api/publish`, envía un `send-push` con transporte `ws`, reporta recibido y clic, y comprueba los contadores en `GET /v1/api/notifications/{id}`.
 
 El núcleo (`client`, `frames`, `backoff`) es TypeScript puro y corre en Node 22 o superior, donde `fetch` y `WebSocket` son globales. Para usar otras implementaciones pasa `fetch` y `createSocket` en la configuración.
+
+## Autoría y licencia
+
+Beezync es un proyecto de Eduardo Flores. El servicio comercial de Beezync es respaldado y operado por ITM Soluciones Tecnológicas e Inversiones S.A.C. Este SDK se distribuye con licencia MIT (ver `LICENSE`).

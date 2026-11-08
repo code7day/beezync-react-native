@@ -5,7 +5,10 @@
   "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "sideEffects": false,
   "scripts": {
     "build": "tsc -p tsconfig.json",
@@ -21,13 +24,18 @@
     "react-native": ">=0.70"
   },
   "peerDependenciesMeta": {
-    "@react-native-firebase/messaging": { "optional": true },
-    "react-native": { "optional": true }
+    "@react-native-firebase/messaging": {
+      "optional": true
+    },
+    "react-native": {
+      "optional": true
+    }
   },
   "devDependencies": {
     "@types/node": "^22.0.0",
     "@types/react": "^18.2.0",
     "react": "^18.2.0",
     "typescript": "^5.5.0"
-  }
+  },
+  "author": "Eduardo Flores (Beezync)"
 }
