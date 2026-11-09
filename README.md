@@ -169,6 +169,6 @@ Registra un dispositivo con un usuario único, se conecta, publica por `/v1/api/
 
 El núcleo (`client`, `frames`, `backoff`) es TypeScript puro y corre en Node 22 o superior, donde `fetch` y `WebSocket` son globales. Para usar otras implementaciones pasa `fetch` y `createSocket` en la configuración.
 
-## Autoría y licencia
+## Licencia
 
-Beezync es un proyecto de Eduardo Flores. El servicio comercial de Beezync es respaldado y operado por ITM Soluciones Tecnológicas e Inversiones S.A.C. Este SDK se distribuye con licencia MIT (ver `LICENSE`).
+© 2026 Beezync. Licencia MIT (ver `LICENSE`).
