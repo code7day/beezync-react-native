@@ -1,6 +1,6 @@
 {
   "name": "@beezync/react-native",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Beezync client SDK for React Native: device registration, realtime channels and notification tracking",
   "license": "MIT",
   "main": "dist/index.js",
